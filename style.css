@@ -1,0 +1,63 @@
+body{
+    margin: auto;
+}
+.header{
+    font-size: 2rem;
+    border: 1px solid blue;
+    background-color: blue;
+    padding: 0;
+    transition: all 0.3s linear;
+}
+@media only screen and (max-width: 600px){
+    .main_nav{
+        font-size: 0.7em;
+        padding: 0;
+    }
+}
+li{
+    cursor: pointer;
+    padding:15px;
+    list-style: none;
+}
+a{
+   text-decoration: none;
+   color: white;
+}
+.main_nav{
+    display:flex ;
+    margin: 0;
+}
+.push{
+    margin-left: auto;
+}
+.header:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+.cover{
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+  }
+  .Project-grid{
+    background-color: rgb(26, 103, 155);
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill , minmax(350px , 1fr));
+  }
+  .zone > img{
+    width: 100%;
+  
+  }
+  .zone:hover{
+    transform: rotate(-5deg);
+    cursor: pointer;
+  }
+  .zone{
+    background-color: #444;
+    padding: 130px;
+    margin: 20px;
+    transition: all 1s;   
+  }
